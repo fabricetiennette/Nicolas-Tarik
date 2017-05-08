@@ -1,0 +1,46 @@
+<section class="section-concerts">
+
+  <h3 id="concerts">concerts</h3>
+
+  <div class="concerts-mobile-nav">
+    {% for concerts in site.data.settings.concerts %}
+        <span class="concerts-button {% if forloop.first %}active-concerts{% endif %}"></span>
+    {% endfor %}
+  </div>
+
+  <div class="concerts-belt">
+    {% for concerts in site.data.settings.concerts %}
+      <div class="concerts-unit {% if forloop.first %}active-concerts{% endif %}">
+
+        <figure class="concerts-face">
+          <img src="{{ site.github.url }}/assets/img/concerts/{{ concerts.avatar }}" alt="concerts-face">
+          <figcaption>
+            <strong class="concerts-name">{{ concerts.name }}</strong>
+            <em class="concerts-title">{{ concerts.title }}</em>
+          </figcaption>
+        </figure>
+
+        <div class="concerts-content">
+          <div class="concerts-quote-mark">{% include icons/icon-quote-mark.html %}</div>
+          {{ concerts.quote }}
+          <div class="concerts-rsvp">
+              <a href="{link.link}" class="btn btn-yellow">Book a Seat!</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <div class="concerts-controls">
+    <div class="concerts-control-next">{% include icons/icon-next.html %}</div>
+    <div class="concerts-control-prev">{% include icons/icon-prev.html %}</div>
+  </div>
+
+  <div class="concerts-logos">
+    {% for concerts in site.data.settings.concerts %}
+        <img class="concerts-logo {% if forloop.first %}active-concerts{% endif %}" src="{{ site.github.url }}/assets/img/concerts/{{ concerts.logo }}" align="{{ concerts.logo }}">
+    {% endfor %}
+  </div>
+
+</section>

@@ -1,0 +1,21 @@
+<section>
+
+  <h3 id="about-me">About Myself</h3>
+
+  <div class="face-lockup">
+
+    <div class="face-img"></div>
+
+    <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
+    <div class="icon-browser">{% include icons/icon-browser.html %}</div>
+
+    </div>
+
+
+  <div class="blurb">
+    {{ site.data.settings.blurb1 | markdownify }}
+    {{ site.data.settings.blurb2 | markdownify }}
+    {{ site.data.settings.blurb3 | markdownify }}
+  </div>
+
+</section>
