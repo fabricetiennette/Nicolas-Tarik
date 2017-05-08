@@ -1,0 +1,179 @@
+.section-concerts
+  position: relative
+
+.concerts-belt
+  width: 100%
+  position: relative
+
+  .concerts-unit
+    max-width: 750px
+    margin: 50px auto
+    position: relative
+    z-index: 1
+    display: none
+
+    &.active-concerts
+      +display(flex)
+      @extend %#{$animation}
+
+    .concerts-face
+      min-width: 180px
+      text-align: center
+
+      img
+        max-width: 200px
+        border-radius: 50%
+
+
+      .concerts-name
+        display: block
+        text-transform: uppercase
+        font-weight: 400
+        letter-spacing: 1px
+
+      .concerts-title
+        font-style: normal
+        font-size: 12px
+        color: #999
+
+    .concerts-content
+      font-size: 18px
+      line-height: 36px
+      font-weight: 300
+      margin-top: -10px
+      position: relative
+
+
+
+
+// Logos
+.concerts-logos
+  position: relative
+  z-index: 3
+  max-width: 750px
+  margin: 0px auto 100px
+  +display(flex)
+  +align-items(flex-end)
+  +justify-content(space-around)
+
+
+  .concerts-logo
+    cursor: pointer
+    margin: 0 20px 20px
+    padding-bottom: 20px
+    border-bottom: 4px solid transparent
+    opacity: 0.5
+
+    &.active-concerts
+      opacity: 1
+      border-bottom: 4px solid $accent
+
+
+.concerts-quote-mark
+  +position(absolute, -18px null null -15px)
+  +size(60px)
+  z-index: -1
+  opacity: 0.3
+
+  path
+    fill: $accent
+
+@mixin button-bg($bg)
+  background: $bg
+  &:hover 
+    background: darken($bg,8%)
+    transition: all 0.3s ease
+  
+  &:active 
+    background: darken($bg,25%)
+   
+
+
+.btn
+  color: white
+  text-decoration: none
+  padding: 5px 10px
+  border-radius: 3px
+  font-family: 'Open Sans', sans-serif
+  font-size: 2em
+
+
+.btn-yellow
+  @include button-bg($accent)
+
+
+
+// Controls
+.concerts-controls
+  +position(absolute, 0px 0px 0px 0px)
+  z-index: 2
+
+  > div
+    +size(40px)
+    margin-top: -20px
+    cursor: pointer
+
+    path
+      fill: $accent
+
+  .concerts-control-next
+    +position(absolute, 50% 10px null null)
+
+  .concerts-control-prev
+    +position(absolute, 50% null null 10px)
+
+// concerts-mobile-nav
+.concerts-mobile-nav
+  text-align: center
+  position: relative
+  z-index: 3
+  display: none
+
+  span
+    display: inline-block
+    +size(16px)
+    border-radius: 50%
+    border: solid 2px $bgcolor
+    margin: 0px 10px
+    cursor: pointer
+
+    &.active-concerts
+      border-color: $accent
+
+
+
+
+@media (max-width: 850px)
+  .concerts-logos
+    +flex-wrap(wrap)
+
+  .concerts-belt
+    overflow-x: hidden
+
+    .concerts-unit.active-concerts
+      display: block
+      position: relative
+      margin-left: auto
+      left: auto
+
+      .concerts-face
+        margin-bottom: 30px
+
+      .concerts-content
+        padding: 0px 30px
+        max-width: 400px
+        margin: 0px auto
+
+      .concerts-quote-mark
+        left: 6px
+
+  .concerts-logos
+    display: none
+
+  .concerts-mobile-nav
+    display: block
+
+
+@media (max-width: 600px)
+  .concerts-controls
+    display: none
