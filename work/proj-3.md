@@ -1,0 +1,2 @@
+---
+<iframe style="border: 0; width: 500px; height: 780px;" src="https://bandcamp.com/EmbeddedPlayer/album=789966787/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://nicolastarik.bandcamp.com/album/les-insomnies-de-nicolas-tarik-2">Les Insomnies de Nicolas Tarik by NICOLAS TARIK</a></iframe>

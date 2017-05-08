@@ -1,0 +1,2 @@
+---
+<iframe style="border: 0; width: 500px; height: 780px;" src="https://bandcamp.com/EmbeddedPlayer/album=2425947120/size=large/bgcol=ffffff/linkcol=333333/track=275887986/transparent=true/" seamless><a href="http://nicolastarik.bandcamp.com/album/amour-dhiver">Amour d&#39;hiver by Nicolas Tarik</a></iframe>
