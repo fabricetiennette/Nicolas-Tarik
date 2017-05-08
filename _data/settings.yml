@@ -1,0 +1,95 @@
+#-------------------------------
+# General Site Settings
+
+title: Nicolas Tarik
+description: Thinker // Singer // Composer
+email: slashteuf@gmail.com
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+- {name: About Me, url: '#about-me'}
+- {name: Work, url: '#work'}
+- {name: Concerts, url: '#concerts'}
+- {name: Contact, url: '#contact'}
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'Provide a description for your website to make it visible to search engines.'
+  rel-author: 'https://github.com/fabricetiennette/'
+  rel-publisher: 'https://github.com/fabricetiennette/'
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+#google-analytics-ua: UA-XXXXXX-X
+
+#-------------------------------
+# About Section
+
+# NOTE: The avatar is defined in the all.sass document.
+
+blurb1: >
+  **Nicolas Tarik** n’est pas un pseudo. Ce sont deux prénoms. Sur son passeport, on lit « Prénoms : Nicolas Tarik ». Taille : 1,75 m. Naissance en 1983. « Nicolas Tarik ». C’est comme si deux personnes figuraient là : il y a Nicolas et Tarik qui cohabitent. « Nicolas Tarik », deux prénoms accolés comme un paradoxe, contraire peut-être à l’esprit du temps, à une époque où certains rêvent de séparer les genres, les « races », les cultures. Le métissage n’est plus à la mode il paraît.
+blurb2: >
+  Nicolas Tarik « s’en foutent » de la mode. Il « aiment » Nino Ferrer et Mano solo. Il « écoutent » le rap, le raï et les musiques créoles. Il « aiment » le rock, surtout quand il est « post- », la musique des griots de Casamance et la morna cap-verdienne. Il « croisent » désirs et engagement, nostalgie et impulsions festives.  
+blurb3: >
+  Il « voudraient » faire de la musique comme on réveille le monde.
+
+#-------------------------------
+# Work Section
+
+projects:
+- {name: Amour D'hiver, folder: "proj-2", file: "work/proj-2.html"}
+- {name: Les Insomnies de Nicolas Tarik, folder: 'proj-3', file: 'work/proj-3.html'}
+- {name: La Musique M'emporte (live), folder: "proj-5", file: "work/proj-5.html",}
+- {name: Mal Armé (Acoustic), folder: 'proj-6', file: 'work/proj-6.html'}
+- {name: Il neige à gros flocons de nous (Recording Session), folder: 'proj-7', file: 'work/proj-7.html'}
+- {name: J'en aime une autre c'est l'ile Maurice (Acoustic), folder: "proj-8", file: "work/proj-8.html"}
+
+#-------------------------------
+# Concerts Section
+
+concerts:
+- {avatar: 'face-aaroni.jpg',
+  name: 'Nicolas Tarik',
+  title: "<strong>Les Inedit d'eureka</strong>",
+  quote: '<p><strong>18 Mai 2017</strong> @ la Maison Eureka - Moka, Mauritius</p>',
+  logo: 'logo1.png'}
+- {avatar: 'face-atariboy.jpg',
+  name: 'Nicolas Tarik',
+  title: '<strong>Les Insomnie de Nicolas Tarik</strong>',
+  quote: '<p><strong>More coming soon</strong> @ Barabar - Grand-baie, Mauritius</p>',
+  logo: 'logo2.png'}
+- {avatar: 'face-jackiesaik.jpg',
+  name: 'Nicolas Tarik',
+  title: '<strong>Les Insomnie de Nicolas Tarik</strong>',
+  quote: '<p><strong>More coming soon</strong> @ Zanfan Lakaz - Cascavelle, Mauritius</p>',
+  logo: 'logo3.png'}
+- {avatar: 'face-teleject.jpg',
+  name: 'Nicolas Tarik',
+  title: '<strong>Les Insomnie de Nicolas Tarik</strong>',
+  quote: "<p><strong>More coming soon</strong> @ Big Will'y - Tamarin, Mauritius</p>",
+  logo: 'logo4.png'}
+
+#-------------------------------
+# Contact Section
+
+social:
+- {socicon: 'facebook', link: 'https://www.facebook.com/profile.php?id=100007936249205&fref=ts'}
+- {socicon: 'soundcloud', link: 'https://soundcloud.com/nicolas-tarik'}
+- {socicon: 'spotify', link: 'https://open.spotify.com/artist/52gmFwoyIFoDZhpKwGw7iw'}
+- {socicon: 'youtube', link: 'https://www.youtube.com/user/aulongdunil'}
+- {socicon: 'deezer', link: 'http://www.deezer.com/artist/7349618'}
+
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
